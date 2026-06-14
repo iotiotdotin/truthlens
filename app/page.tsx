@@ -85,7 +85,7 @@ const graveyard = [
 ]
 
 const examplePitch =
-  "We are building an AI diligence copilot for seed investors. Founders paste a startup pitch, and Verdict runs five specialist analyst agents that score market pull, competition, technical feasibility, macro timing, and originality. The output is a concise investor memo with risks, opportunities, and follow-up questions."
+  "We are building an AI diligence copilot for seed investors. Founders paste a startup pitch, and TruthLens runs five specialist analyst agents that score market pull, competition, technical feasibility, macro timing, and originality. The output is a concise investor memo with risks, opportunities, and follow-up questions."
 
 type StreamVerdict = {
   results: AnalyzePitchResult
@@ -180,7 +180,7 @@ export default function Page() {
               <div className="flex size-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                 <Radar className="size-4" />
               </div>
-              <span className="text-lg font-semibold tracking-normal">Verdict</span>
+              <span className="text-lg font-semibold tracking-normal">TruthLens</span>
             </div>
             <div className="hidden items-center gap-2 sm:flex">
               <Badge variant="outline" className="border-emerald-400/30 bg-emerald-400/10 text-emerald-200">
@@ -202,7 +202,7 @@ export default function Page() {
                   AI partner meeting simulator
                 </Badge>
                 <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-normal text-balance sm:text-5xl lg:text-6xl">
-                  Verdict
+                  TruthLens
                 </h1>
                 <p className="max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
                   A professional AI diligence desk that stress-tests startup ideas through five specialist judges before the next partner meeting.
@@ -353,7 +353,7 @@ export default function Page() {
               </Badge>
               <h2 className="text-2xl font-semibold tracking-normal sm:text-3xl">Terminal-style diligence, without the theater.</h2>
               <p className="max-w-xl text-sm leading-6 text-muted-foreground">
-                Verdict turns a raw pitch into a structured analyst trace, making the reasoning visible before the memo lands.
+                TruthLens turns a raw pitch into a structured analyst trace, making the reasoning visible before the memo lands.
               </p>
             </div>
             {finalVerdict ? (
@@ -374,7 +374,7 @@ export default function Page() {
               <span className="size-2 rounded-full bg-red-400" />
               <span className="size-2 rounded-full bg-amber-300" />
               <span className="size-2 rounded-full bg-emerald-300" />
-              <span className="ml-2 text-xs text-muted-foreground">verdict-analysis.log</span>
+              <span className="ml-2 text-xs text-muted-foreground">truthlens-analysis.log</span>
             </div>
             <div ref={terminalFeedRef} className="max-h-80 space-y-3 overflow-y-auto p-4 text-xs leading-6 sm:text-sm">
               {logs.length === 0 ? (

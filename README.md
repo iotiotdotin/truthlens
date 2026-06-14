@@ -1,6 +1,6 @@
-# Verdict
+# TruthLens
 
-Verdict is a Next.js investor diligence tool for stress-testing startup ideas. A founder enters a pitch, the app streams live analysis progress to a terminal-style feed, runs five specialist AI judge agents in parallel, synthesizes the results with a consensus agent, updates the dashboard with the final verdict, and opens a dedicated investment report from the real analysis output.
+TruthLens is a Next.js investor diligence tool for stress-testing startup ideas. A founder enters a pitch, the app streams live analysis progress to a terminal-style feed, runs five specialist AI judge agents in parallel, synthesizes the results with a consensus agent, updates the dashboard with the final verdict, and opens a dedicated investment report from the real analysis output.
 
 ## Tech Stack
 
@@ -92,7 +92,7 @@ verdict-ai/
 
 ## Architecture Overview
 
-Verdict has three main layers:
+TruthLens has three main layers:
 
 1. Frontend experience in `app/page.tsx`
 2. Streaming orchestration endpoint in `app/api/analyze/stream/route.ts`
